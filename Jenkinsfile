@@ -8,10 +8,4 @@ node{
     stage('Creating Package'){
         sh "${mvnHome}/bin/mvn package"
     }
-    post {
-        always {
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
-            junit 'build/reports/**/*.xml'
-        }
-    }
 }
