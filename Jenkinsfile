@@ -5,6 +5,6 @@ node{
         mvnHome = tool 'M3'
     }
     stage('Creating Package'){
-        sh "{mvHome}/bin/mvn package"
+        sh "{mvnHome}/bin/mvn package"
     }
 }
