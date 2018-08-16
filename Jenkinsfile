@@ -1,7 +1,6 @@
 node{ 
     def mvnHome
-    stage('Preparation'){
-        cleanWs()      
+    stage('Preparation'){   
         mvnHome = tool 'M3'
     }
     stage('Creating Package'){
