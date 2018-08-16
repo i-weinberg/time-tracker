@@ -1,7 +1,7 @@
 node{ 
     def mvnHome
     stage('Preparation'){   
-        cleanWs
+        cleanWs()
         checkoutscm
         mvnHome = tool 'M3'
     }
